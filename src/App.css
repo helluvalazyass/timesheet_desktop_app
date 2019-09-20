@@ -1,33 +1,78 @@
-.App {
-  text-align: center;
+#login_form {
+  padding: 2em 2em 0;
+  width: max-content;
+  height: max-content;
+  
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+label{
+  padding: 2px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input[type=email], input[type=password] {
+  height: 2em;
+  border: 1px solid lightgray;
+
+}
+
+button {
+  padding: 1em;
+  margin: 1em 0;
+  display: block;
+  width: 100%;
+  background-color: mediumslateblue;
+  color: white;
+  border-radius: 0.2em;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 2px 2px 4px 2px rgb(203, 198, 230);
+
+}
+
+button:active {
+  background-color: rgb(35, 0, 236);
+}
+
+button::-moz-focus-inner {
+  border:0;
+}
+
+.form_div {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+#login_signup {
+  margin: 3em auto;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  height: max-content;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 5px #e6e6e6;
+}
+
+#link {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1em;
+}
+
+.form_title {
+  background-color: darkslateblue;
   color: white;
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 2em;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  background-color: whitesmoke;
 }
